@@ -1,2 +1,0 @@
-# MPA
-MPA Android Application 

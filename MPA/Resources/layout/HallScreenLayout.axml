@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+          <!--<TextView
+            android:id="@+id/AccountScreenTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Support V7 Action Bar Drawer Toggle"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:gravity="center" />-->
+
+          <ImageView
+            android:id="@+id/AddButtonImageHallScreen"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_icon"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            />
+          
+          <ListView
+            android:id="@+id/ListData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            />
+          
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/LeftDrawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#818181"
+            android:dividerHeight="1dp"
+            android:background="#A0D8B5" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
