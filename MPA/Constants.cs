@@ -46,5 +46,6 @@ namespace MPA
         public static string CHOICE_ACTIVITY = "Would you want to login ?";
         public static string VALID_EMAIL_EXTRA = "Email valid";
         public static string RECOVERY_EMAIL_INVALID = "Email recovery inValid.\n Example: email@extention.vn";
+
     }
 }
